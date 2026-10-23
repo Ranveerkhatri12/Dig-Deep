@@ -21,15 +21,15 @@ body {
     to bottom,
     #8fd8ff 0,
     #cdeeff 330px,
-    #5a3a22 340px,
-    #6b4528 700px,
-    #7a5230 2200px,
-    #85705a 3600px,
-    #8a8279 4950px,
-    #6e675f 7000px,
-    #5a534c 9500px,
-    #4a4540 11430px,
-    #2b2724 100%
+    #f0c9a0 340px,
+    #e3b88a 700px,
+    #d4a373 2200px,
+    #b8a898 3600px,
+    #9d9890 4950px,
+    #7e7a76 7000px,
+    #5f5b57 9500px,
+    #45413e 11430px,
+    #2f2c2a 100%
   );
 }
 
@@ -40,30 +40,28 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image:
-    url("assets/ground.jpg"),
-    radial-gradient(circle at 20% 30%, rgba(0, 0, 0, .18) 0 3px, transparent 4px),
-    radial-gradient(circle at 70% 60%, rgba(255, 255, 255, .10) 0 2px, transparent 3px),
-    radial-gradient(circle at 45% 85%, rgba(0, 0, 0, .14) 0 4px, transparent 5px);
-  background-size: 512px, 90px 90px, 70px 70px, 130px 130px;
+  background-image: url("assets/ground.jpg");
+  background-size: 470px 403px;
+  image-rendering: pixelated;
   mix-blend-mode: multiply;
-  opacity: .55;
+  opacity: .9;
+  mask-image: linear-gradient(to bottom, #000 0, #000 30%, rgba(0, 0, 0, .35) 100%);
   pointer-events: none;
 }
 
 .sky {
   position: absolute;
-  top: 0;
-  left: 50%;
+  top: -6px;
+  left: 76%;
   translate: -50% 0;
-  width: min(380px, 80vw);
+  width: min(300px, 40vw);
   height: auto;
   animation: drift 8s ease-in-out infinite;
 }
 
 .title {
   position: absolute;
-  top: 70px;
+  top: 100px;
   left: 0;
   right: 0;
   padding: 0 16px;
